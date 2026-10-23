@@ -1,0 +1,6 @@
+Como usar
+1. Abra index.html no navegador (precisa de internet para carregar o Three.js e as fontes).
+2. data.js = seus textos e fases (edite aqui).
+3. style.css = visual dos painéis e HUD.
+4. main.js = o mundo 3D, o robozinho e os controles.
+Fotos: clique nos espaços tracejados dentro de cada fase; ficam salvas no navegador.

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diário de Relatos de Aprendizagem · 3D</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c" aria-label="Mundo 3D do diário"></canvas>
+<div class="hud" id="hud" hidden><div>NÍVEL <b id="lv">0</b>/<span id="mx"></span></div><div class="bar"><i id="xp"></i></div><div><b id="xpt">0</b>%</div></div>
+<div id="name"></div>
+<div class="nav" id="nav" hidden>
+<button id="prev" aria-label="Fase anterior">◀</button><button id="open">ABRIR FASE</button><button id="next" aria-label="Próxima fase">▶</button>
+</div>
+<div id="title"><h1>Diário de<br>Relatos de<br>Aprendizagem</h1>
+<p>Cada aula é uma fase. Arraste para girar a câmera, use ← → ou os botões para viajar e clique no cristal para abrir o relato.</p>
+<button id="start" class="blink">▶ PRESS START</button></div>
+<div id="panel" role="dialog" aria-modal="true"></div>
+<div id="toast"></div>
+<input type="file" id="file" accept="src/img/*" hidden>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
